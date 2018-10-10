@@ -1,0 +1,18 @@
+# Write a program that gets a string from the user containing a person's first, middle, and last names and then
+# displays their first, middle, and last initials.  (Creating a new variable and concatenating each letter plus a '.' is
+# the easiest way to do this.)
+
+
+def main():
+
+    full_name = input('Please enter your name in the format First Middle Last: ')
+
+    first_name = full_name.split[0]
+    middle_name = full_name.split[1]
+
+    last_name = full_name.split[2]
+    full_name = first_name + middle_name + last_name
+    print(full_name)
+
+
+main()
