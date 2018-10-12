@@ -1,0 +1,12 @@
+# Write a program that lets the user enter a string and displays the letter that appears most frequently in the
+# string. Ignore spaces, punctuation, and uppercase vs lowercase.
+
+
+def main():
+
+    my_string = input('Please enter a phrase: ')
+    print()
+
+
+
+main()
