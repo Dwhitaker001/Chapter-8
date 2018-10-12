@@ -10,18 +10,18 @@
 # Print all the characters from the name variable by accessing one character at a time
 
 name = "John Jacob Jingleheimer Schmidt"
-first_name = name[:4]
-print(first_name)
-middle_name = name[5:10]
-print(middle_name)
-last_name = name[24:]
-print(last_name)
+for letter in name:
+    print(letter, end=" ")
+print("")
+
 
 # Use the index to access and print the capital s in Schmidt from the variable name
-index = 0
-while index < name
+s_index = name.index("Schmidt")
+print(name[s_index])
+
 # Use the index with negative numbers to print the letters from the last name "Schmidt" in the
 # name variable
+print(name[-7:])
 
 # TODO 8.2 String slicing
 # use string slicing to assign the middle name "Jacob" from name to the variable middle, replace the ""
@@ -42,13 +42,21 @@ if 'Michael' in name:
 else:
     print('Michael was not found.')
 # Test to see if name is a number
+if name.isdigit():
+    print(name, "is a number.")
+else:
+    print(name, "is not a number.")
 
 # Test to see if number is a number
 
 number = "42"
-
+if number.isdigit():
+    print(number, "is a number.")
+else:
+    print(number, "is not a number.")
 # Search for "J" in name, replace with "j" (lower case)
-new_string = name.replace('J', 'j')
-print(new_string)
+name = name.replace('J', 'j')
+print(name)
 # split the string name into the variable name_list, replace the ""
-name_list = ""
+name_list = name.split()
+print(name_list)
