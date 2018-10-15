@@ -8,8 +8,13 @@ def main():
     full_name = input('Please enter your name in the format First Middle Last: ')
 
     first_name = full_name.split()
-    full_name = first_name[0][0]
-    print(full_name)
+    full_names = first_name[0]
+    first_initial = full_names[0:1]
+    middle_name = first_name[1]
+    middle_init = middle_name[0:1]
+    last_name = first_name[2]
+    last_init = last_name[0:1]
+    print(first_initial + middle_init + last_init)
 
 
 main()
